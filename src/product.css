@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+    padding: 0;
+    margin: 0 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Muli", sans-serif;
+    background-color: #F7F8FC;
+}
+h2{
+   text-align: center;
+   font-size: 42px;
+   padding-top: 80px;
+   color: #698ccd;
+   letter-spacing: 1px;
+   line-height: 58px;
+   font-weight: 300;
+   text-transform: uppercase;
+
+}
+.container{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #F7F8FC;
+}
+.container .content_product_lable{
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    top: 5px;
+    left: 5px;
+    padding: 0 10px;
+    background: linear-gradient(-90deg, #698ccd, #7dc4e0);
+    border-radius: 3px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.container .images .content .content-price{
+    display: flex;
+    font-size: 14px;
+    line-height: 26px;
+    align-items: center;
+}
+.container .images .content .content-price .content-product-price{
+    margin-right: 10px;
+}
+.container .images .content{
+    position: absolute;
+    left: 0px;
+    bottom: 480px;
+    background-color: white;
+    width: 100%;
+}
+.container .container_grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.container .container_grid .images{
+    background-color: white;
+    height: 320px;
+    width: 308px;
+    border-radius: 4px;
+    padding : 10px;
+    position: relative;
+    border-bottom: 1px solid #698ccd;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.container .container_grid .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-product{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+    padding-top: 5px;
+}
+.content-product-original{
+    color: #5C5C66;
+    text-decoration: line-through;
+}
+.container .container_grid .images .content{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    padding: 0 10px;
+}
+.content-infor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-infor .content-productlink{
+    color:#698ccd ;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.containmore{
+    text-align: center;
+    width: 100%;
+}
+.containmore .cta{
+    display: inline-flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 14px;
+    background:linear-gradient(-90deg, #698ccd, #7dc4e0);
+    font-weight: 500;
+    height: 48px;
+    padding: 0 32px;
+    align-items: center;
+    border-radius: 4px;
+    color: white;
+    transition: all 0.3s ease;
+}
+.containmore .cta:hover{
+    box-shadow: 0px 10px 15px -8px rgba(105, 140, 205, 0.8);
+}
+.content-infor .content-productview{
+    display: flex;
+    align-items: center;
+    padding:0 40px;
+    height: 40px;
+    background: linear-gradient(-90deg, #698ccd, #7dc4e0);
+    justify-content: center;
+    border-radius: 4px;
+    color: white;
+    transition: all 0.2s ease;
+}
+.content-infor .content-productview:hover{
+    box-shadow: 0px 10px 15px -8px rgba(105, 140, 205, 0.8);
+}
+@media only screen and (max-width:790px){
+    .container .container_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
