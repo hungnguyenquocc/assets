@@ -638,3 +638,16 @@ i.menu-toggle{
         grid-template-columns: repeat(3,1fr);
     }
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #707070;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #069c54;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #048654;
+}

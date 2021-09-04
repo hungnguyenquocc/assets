@@ -265,14 +265,7 @@ window.addEventListener("load", function(e) {
     displatCart();
 
     const productsRemove = document.querySelector(".products");
-    let cartItemsK =
-        localStorage.length > 0 ?
-        JSON.parse(localStorage.getItem("productsIncart")) :
-        [];
-
-    if (Array.isArray(cartItemsK) && cartItemsK.length > 0) {
-        [...cartItemsK].forEach((item) => todo(item.tag));
-    }
+    
     productsRemove.addEventListener("click", function(e) {
         if (e.target.matches(".icon-times")) {
             const productList = e.target.parentNode.parentNode;
@@ -283,4 +276,5 @@ window.addEventListener("load", function(e) {
             localStorage.setItem("cartNumber",0);
         }
     });
+    
 });
