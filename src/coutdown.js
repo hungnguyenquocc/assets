@@ -18,6 +18,18 @@ function newYear() {
     document.getElementById("hour").innerText = h;
     document.getElementById("minute").innerText = m;
     document.getElementById("second").innerText = s;
+    if(d <= 0){
+        document.getElementById("day").innerText = 0;
+        if(h <= 0){
+            document.getElementById("hour").innerText = 0;
+            if(m <= 0 ){
+                document.getElementById("minute").innerText = 0;
+                if(s <= 0){
+                    document.getElementById("second").innerText = 0;
+                }
+            }
+        }
+    }
 }
 
 setInterval(function() {
