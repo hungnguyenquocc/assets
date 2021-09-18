@@ -80,7 +80,7 @@ ul.main-menu a:hover{
     color: #069c54;
 }
 ul.main-menu a:hover::after{
-    width: 100%;
+    width: 80%;
 }
 .d-flex{
     display: flex;
